@@ -4,7 +4,7 @@
 package procUtil
 
 import (
-	"gitlab.ulyssesk.top/common/common/logger/log"
+	"github.com/ulysseskk/common/logger/log"
 	"os"
 	"os/signal"
 	"syscall"

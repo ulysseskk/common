@@ -7,7 +7,7 @@ import (
 	"strings"
 	"sync"
 
-	"gitlab.ulyssesk.top/common/common/util/fasttime"
+	"github.com/ulysseskk/common/util/fasttime"
 )
 
 // GetServerTLSConfig returns TLS config for the server.

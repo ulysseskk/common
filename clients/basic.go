@@ -4,8 +4,8 @@ import (
 	"context"
 	"github.com/go-resty/resty/v2"
 	jsoniter "github.com/json-iterator/go"
-	"gitlab.ulyssesk.top/common/common/model/errors"
-	"gitlab.ulyssesk.top/common/common/model/rest"
+	"github.com/ulysseskk/common/model/errors"
+	"github.com/ulysseskk/common/model/rest"
 	"net/http"
 )
 

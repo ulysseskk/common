@@ -1,12 +1,12 @@
 package services
 
 import (
-	"gitlab.ulyssesk.top/common/common/components/opensearch/management/requests"
-	"gitlab.ulyssesk.top/common/common/components/opensearch/management/responses"
 	"context"
 	"encoding/json"
 	"errors"
 	"fmt"
+	"github.com/ulysseskk/common/components/opensearch/management/requests"
+	"github.com/ulysseskk/common/components/opensearch/management/responses"
 
 	"github.com/google/go-cmp/cmp"
 	"github.com/google/go-cmp/cmp/cmpopts"

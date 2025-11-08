@@ -1,5 +1,5 @@
 package responses
 
-import "gitlab.ulyssesk.top/common/common/components/opensearch/management/requests"
+import "github.com/ulysseskk/common/components/opensearch/management/requests"
 
 type GetISMPoliciesResponse requests.Policy

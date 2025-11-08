@@ -3,8 +3,8 @@ package middleware
 import (
 	"context"
 	"github.com/gin-gonic/gin"
-	"gitlab.ulyssesk.top/common/common/trace"
-	ginUtil "gitlab.ulyssesk.top/common/common/util/gin"
+	"github.com/ulysseskk/common/trace"
+	ginUtil "github.com/ulysseskk/common/util/gin"
 )
 
 // HandleTracing returns a gin handler

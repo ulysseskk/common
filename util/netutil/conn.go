@@ -7,8 +7,8 @@ import (
 	"net"
 	"sync/atomic"
 
-	"gitlab.ulyssesk.top/common/common/util/fasttime"
 	"github.com/VictoriaMetrics/metrics"
+	"github.com/ulysseskk/common/util/fasttime"
 )
 
 type connMetrics struct {

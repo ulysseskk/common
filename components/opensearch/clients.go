@@ -1,10 +1,10 @@
 package opensearch
 
 import (
-	"gitlab.ulyssesk.top/common/common/model/errors"
 	"crypto/tls"
 	"fmt"
 	"github.com/opensearch-project/opensearch-go"
+	"github.com/ulysseskk/common/model/errors"
 	"net/http"
 )
 

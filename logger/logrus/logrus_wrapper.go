@@ -1,22 +1,21 @@
 package logrus
 
 import (
-	"gitlab.ulyssesk.top/common/common/logger"
-	"gitlab.ulyssesk.top/common/common/logger/common"
-	"gitlab.ulyssesk.top/common/common/logger/conf"
-	"gitlab.ulyssesk.top/common/common/logger/formatter"
 	"context"
 	"fmt"
+	"io"
+	"os"
+	"runtime"
+	"strings"
+
 	"github.com/go-logr/logr"
 	"github.com/pkg/errors"
 	"github.com/sirupsen/logrus"
-	"github.com/sirupsen/logrus/hooks/syslog"
+	"github.com/ulysseskk/common/logger"
+	"github.com/ulysseskk/common/logger/common"
+	"github.com/ulysseskk/common/logger/conf"
+	"github.com/ulysseskk/common/logger/formatter"
 	"gopkg.in/natefinch/lumberjack.v2"
-	"io"
-	"os"
-	"path"
-	"runtime"
-	"strings"
 )
 
 type Close func()
@@ -112,17 +111,6 @@ func NewLogrusWrapper(options *conf.LogConfig) (*LogrusWrapper, error) {
 			closers = append(closers, rotateFile)
 		}
 
-		if v.Type == conf.OutputTypeSyslog && v.Syslog != nil {
-			syslogTag := v.Syslog.Tag
-			if syslogTag == "" {
-				syslogTag = path.Base(os.Args[0])
-			}
-			hook, err := syslog.NewSyslogHook(v.Syslog.Protocol, v.Syslog.Address, v.Syslog.GetFacility(), syslogTag)
-			if err != nil {
-				return nil, errors.Wrapf(err, "fail to connect %s using %s", v.Syslog.Address, v.Syslog.Protocol)
-			}
-			logrusLogger.AddHook(hook)
-		}
 	}
 
 	mv := io.MultiWriter(writers...)

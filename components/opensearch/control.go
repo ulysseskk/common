@@ -1,11 +1,11 @@
 package opensearch
 
 import (
-	"gitlab.ulyssesk.top/common/common/components/opensearch/model"
-	"gitlab.ulyssesk.top/common/common/model/errors"
 	"context"
 	"encoding/json"
 	"github.com/opensearch-project/opensearch-go/opensearchapi"
+	"github.com/ulysseskk/common/components/opensearch/model"
+	"github.com/ulysseskk/common/model/errors"
 	"strings"
 )
 

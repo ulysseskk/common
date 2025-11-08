@@ -4,7 +4,7 @@ import (
 	"bytes"
 	"github.com/go-viper/mapstructure/v2"
 	"github.com/spf13/viper"
-	"gitlab.ulyssesk.top/common/common/util/compress"
+	"github.com/ulysseskk/common/util/compress"
 	"os"
 	"path/filepath"
 )

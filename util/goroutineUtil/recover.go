@@ -1,10 +1,10 @@
 package goroutineUtil
 
 import (
-	"gitlab.ulyssesk.top/common/common/logger/log"
-	"gitlab.ulyssesk.top/common/common/model/errors"
-	"gitlab.ulyssesk.top/common/common/model/rest"
 	"fmt"
+	"github.com/ulysseskk/common/logger/log"
+	"github.com/ulysseskk/common/model/errors"
+	"github.com/ulysseskk/common/model/rest"
 	"runtime"
 )
 

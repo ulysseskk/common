@@ -1,8 +1,8 @@
 package config
 
 import (
-	"gitlab.ulyssesk.top/common/common/logger/log"
 	"fmt"
+	"github.com/ulysseskk/common/logger/log"
 	"os"
 )
 

@@ -1,10 +1,10 @@
 package services
 
 import (
-	"gitlab.ulyssesk.top/common/common/components/opensearch/management/responses"
 	"context"
 	"crypto/tls"
 	"encoding/json"
+	"github.com/ulysseskk/common/components/opensearch/management/responses"
 	"io"
 	"net/http"
 	"strconv"

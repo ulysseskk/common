@@ -5,7 +5,7 @@ import (
 	"github.com/gin-gonic/gin"
 	"github.com/prometheus/client_golang/prometheus"
 	"github.com/prometheus/client_golang/prometheus/promhttp"
-	"gitlab.ulyssesk.top/common/common/health/builtin/pprof"
+	"github.com/ulysseskk/common/health/builtin/pprof"
 	"net/http"
 	"sync"
 )

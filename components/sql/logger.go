@@ -3,9 +3,9 @@ package sql
 import (
 	"context"
 	"fmt"
-	"gitlab.ulyssesk.top/common/common/components/sql/metrics"
-	"gitlab.ulyssesk.top/common/common/logger/log"
-	"gitlab.ulyssesk.top/common/common/trace"
+	"github.com/ulysseskk/common/components/sql/metrics"
+	"github.com/ulysseskk/common/logger/log"
+	"github.com/ulysseskk/common/trace"
 	"gorm.io/gorm/logger"
 	"time"
 )

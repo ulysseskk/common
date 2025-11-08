@@ -1,11 +1,11 @@
 package middleware
 
 import (
-	"gitlab.ulyssesk.top/common/common/logger/log"
-	ginUtil "gitlab.ulyssesk.top/common/common/util/gin"
 	"bytes"
 	"fmt"
 	"github.com/gin-gonic/gin"
+	"github.com/ulysseskk/common/logger/log"
+	ginUtil "github.com/ulysseskk/common/util/gin"
 	"io/ioutil"
 	"math"
 	"net/http"

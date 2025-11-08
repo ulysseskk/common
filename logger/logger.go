@@ -5,8 +5,8 @@ import (
 	"github.com/go-logr/logr"
 	"github.com/opentracing/opentracing-go"
 	"github.com/uber/jaeger-client-go"
-	"gitlab.ulyssesk.top/common/common/logger/common"
-	"gitlab.ulyssesk.top/common/common/logger/conf"
+	"github.com/ulysseskk/common/logger/common"
+	"github.com/ulysseskk/common/logger/conf"
 )
 
 type Logger interface {

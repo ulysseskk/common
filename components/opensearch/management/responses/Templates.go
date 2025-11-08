@@ -1,6 +1,6 @@
 package responses
 
-import "gitlab.ulyssesk.top/common/common/components/opensearch/management/requests"
+import "github.com/ulysseskk/common/components/opensearch/management/requests"
 
 type GetIndexTemplatesResponse struct {
 	IndexTemplates []IndexTemplate `json:"index_templates"`

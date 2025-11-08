@@ -1,11 +1,11 @@
 package http
 
 import (
-	"gitlab.ulyssesk.top/common/common/logger/log"
-	"gitlab.ulyssesk.top/common/common/server"
 	"context"
 	"fmt"
 	"github.com/gin-gonic/gin"
+	"github.com/ulysseskk/common/logger/log"
+	"github.com/ulysseskk/common/server"
 )
 
 func NewHttpServerWithPreInit[T server.IBaseConfig](cfg T, initFunc func(context.Context, T) error, register ...RouterRegister) (*BaseHttpServer[T], error) {

@@ -3,7 +3,7 @@ package rest
 import (
 	"context"
 	"fmt"
-	"gitlab.ulyssesk.top/common/common/trace"
+	"github.com/ulysseskk/common/trace"
 )
 
 var (

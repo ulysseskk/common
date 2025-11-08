@@ -1,7 +1,6 @@
 package services
 
 import (
-	"gitlab.ulyssesk.top/common/common/components/opensearch/management/requests"
 	"context"
 	"encoding/json"
 	"errors"
@@ -9,6 +8,7 @@ import (
 	"github.com/google/go-cmp/cmp"
 	"github.com/google/go-cmp/cmp/cmpopts"
 	"github.com/opensearch-project/opensearch-go/opensearchutil"
+	"github.com/ulysseskk/common/components/opensearch/management/requests"
 	"sigs.k8s.io/controller-runtime/pkg/log"
 )
 

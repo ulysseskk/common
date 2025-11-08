@@ -6,7 +6,7 @@ import (
 	"fmt"
 	"github.com/go-viper/mapstructure/v2"
 	"github.com/spf13/viper"
-	"gitlab.ulyssesk.top/common/common/logger/log"
+	"github.com/ulysseskk/common/logger/log"
 	"io/fs"
 	"os"
 	"path/filepath"

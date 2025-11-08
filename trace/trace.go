@@ -9,7 +9,7 @@ import (
 	jaegercfg "github.com/uber/jaeger-client-go/config"
 	jaegerlog "github.com/uber/jaeger-client-go/log"
 	"github.com/uber/jaeger-lib/metrics"
-	commonContext "gitlab.ulyssesk.top/common/common/util/context"
+	commonContext "github.com/ulysseskk/common/util/context"
 	"net/http"
 )
 

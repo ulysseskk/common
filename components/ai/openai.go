@@ -3,7 +3,7 @@ package client
 import (
 	"context"
 	"github.com/sashabaranov/go-openai"
-	"gitlab.ulyssesk.top/common/common/model/errors"
+	"github.com/ulysseskk/common/model/errors"
 	"net/http"
 	"net/url"
 )

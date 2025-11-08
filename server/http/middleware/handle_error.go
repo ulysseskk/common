@@ -1,12 +1,12 @@
 package middleware
 
 import (
-	"gitlab.ulyssesk.top/common/common/logger/log"
-	"gitlab.ulyssesk.top/common/common/model/errors"
-	"gitlab.ulyssesk.top/common/common/model/rest"
-	ginUtil "gitlab.ulyssesk.top/common/common/util/gin"
 	"context"
 	"github.com/gin-gonic/gin"
+	"github.com/ulysseskk/common/logger/log"
+	"github.com/ulysseskk/common/model/errors"
+	"github.com/ulysseskk/common/model/rest"
+	ginUtil "github.com/ulysseskk/common/util/gin"
 	"net/http"
 )
 

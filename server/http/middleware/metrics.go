@@ -1,11 +1,11 @@
 package middleware
 
 import (
-	"gitlab.ulyssesk.top/common/common/logger/log"
 	"encoding/json"
 	"fmt"
 	"github.com/gin-gonic/gin"
 	"github.com/prometheus/client_golang/prometheus"
+	"github.com/ulysseskk/common/logger/log"
 	"math"
 	"net/http"
 	"runtime"

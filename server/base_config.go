@@ -2,12 +2,13 @@ package server
 
 import (
 	"fmt"
-	"gitlab.ulyssesk.top/common/common/components"
-	"gitlab.ulyssesk.top/common/common/components/redis"
-	"gitlab.ulyssesk.top/common/common/components/sql"
-	"gitlab.ulyssesk.top/common/common/health"
-	loggerConfig "gitlab.ulyssesk.top/common/common/logger/conf"
 	"time"
+
+	"github.com/ulysseskk/common/components"
+	"github.com/ulysseskk/common/components/redis"
+	"github.com/ulysseskk/common/components/sql"
+	"github.com/ulysseskk/common/health"
+	loggerConfig "github.com/ulysseskk/common/logger/conf"
 )
 
 type IBaseConfig interface {

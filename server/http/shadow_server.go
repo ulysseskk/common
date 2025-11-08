@@ -1,8 +1,8 @@
 package http
 
 import (
-	"gitlab.ulyssesk.top/common/common/server"
 	"github.com/gin-gonic/gin"
+	"github.com/ulysseskk/common/server"
 )
 
 type ShadowHttpServer[T server.IBaseConfig] struct {

@@ -2,7 +2,7 @@ package middleware
 
 import (
 	"github.com/gin-gonic/gin"
-	"gitlab.ulyssesk.top/common/common/logger/log"
+	"github.com/ulysseskk/common/logger/log"
 )
 
 // ErrorWriterWrapperOfcommon/logger is the wrapper of logrus logger that used to output gin's error

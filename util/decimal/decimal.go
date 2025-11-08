@@ -1,7 +1,7 @@
 package decimal
 
 import (
-	"gitlab.ulyssesk.top/common/common/util/fastnum"
+	"github.com/ulysseskk/common/util/fastnum"
 	"math"
 	"sync"
 )

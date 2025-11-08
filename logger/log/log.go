@@ -2,9 +2,9 @@ package log
 
 import (
 	"fmt"
-	"gitlab.ulyssesk.top/common/common/logger"
-	"gitlab.ulyssesk.top/common/common/logger/conf"
-	"gitlab.ulyssesk.top/common/common/logger/logrus"
+	"github.com/ulysseskk/common/logger"
+	"github.com/ulysseskk/common/logger/conf"
+	"github.com/ulysseskk/common/logger/logrus"
 	"os"
 )
 

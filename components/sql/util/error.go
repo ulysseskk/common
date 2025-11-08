@@ -1,8 +1,8 @@
 package dal
 
 import (
-	errors2 "gitlab.ulyssesk.top/common/common/model/errors"
 	"errors"
+	errors2 "github.com/ulysseskk/common/model/errors"
 	"gorm.io/gorm"
 )
 

@@ -1,20 +1,16 @@
 package conf
 
-import "log/syslog"
-
 const (
 	OutputTypeStdout     string = "stdout"
 	OutputTypeStderr            = "stderr"
 	OutputTypeFile              = "file"
 	OutputTypeRotateFile        = "rotate_file"
-	OutputTypeSyslog            = "syslog"
 )
 
 type Output struct {
-	Type       string      `json:"type" yaml:"type"` // stdout, stderr, file, rotate_file, syslog
+	Type       string      `json:"type" yaml:"type"` // stdout, stderr, file, rotate_file
 	File       *string     `json:"file" yaml:"file"`
 	RotateFile *RotateFile `json:"rotate_file" yaml:"rotate_file"`
-	Syslog     *Syslog     `json:"syslog" yaml:"syslog"`
 }
 
 type RotateFile struct {
@@ -54,47 +50,4 @@ func (rf *RotateFile) SetDefaults() {
 	if rf.MaxSize == 0 {
 		rf.MaxSize = 100
 	}
-}
-
-type Syslog struct {
-	Address  string `json:"address" yaml:"address"`
-	Facility string `json:"facility" yaml:"facility"`
-	Protocol string `json:"protocol" yaml:"protocol"`
-	Tag      string `json:"tag" yaml:"tag"`
-}
-
-func (sl *Syslog) GetFacility() syslog.Priority {
-	if len(sl.Facility) <= 0 {
-		return syslog.LOG_LOCAL5
-	}
-
-	m := map[string]syslog.Priority{
-		"kern":     syslog.LOG_KERN,
-		"user":     syslog.LOG_USER,
-		"mail":     syslog.LOG_MAIL,
-		"daemon":   syslog.LOG_DAEMON,
-		"auth":     syslog.LOG_AUTH,
-		"syslog":   syslog.LOG_SYSLOG,
-		"lpr":      syslog.LOG_LPR,
-		"news":     syslog.LOG_NEWS,
-		"uucp":     syslog.LOG_UUCP,
-		"authpriv": syslog.LOG_AUTHPRIV,
-		"ftp":      syslog.LOG_FTP,
-		"cron":     syslog.LOG_CRON,
-		"local0":   syslog.LOG_LOCAL0,
-		"local1":   syslog.LOG_LOCAL1,
-		"local2":   syslog.LOG_LOCAL2,
-		"local3":   syslog.LOG_LOCAL3,
-		"local4":   syslog.LOG_LOCAL4,
-		"local5":   syslog.LOG_LOCAL5,
-		"local6":   syslog.LOG_LOCAL6,
-		"local7":   syslog.LOG_LOCAL7,
-	}
-
-	f, ok := m[sl.Facility]
-	if !ok {
-		return syslog.LOG_LOCAL5
-	}
-
-	return f
 }

@@ -1,8 +1,8 @@
 package sql
 
 import (
-	"gitlab.ulyssesk.top/common/common/logger/log"
 	"fmt"
+	"github.com/ulysseskk/common/logger/log"
 	"gorm.io/gorm"
 	"gorm.io/gorm/schema"
 	"sync"

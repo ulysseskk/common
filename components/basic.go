@@ -1,10 +1,10 @@
 package components
 
 import (
-	"gitlab.ulyssesk.top/common/common/components/minio"
-	"gitlab.ulyssesk.top/common/common/components/opensearch"
-	"gitlab.ulyssesk.top/common/common/logger/log"
-	"gitlab.ulyssesk.top/common/common/model/errors"
+	"github.com/ulysseskk/common/components/minio"
+	"github.com/ulysseskk/common/components/opensearch"
+	"github.com/ulysseskk/common/logger/log"
+	"github.com/ulysseskk/common/model/errors"
 )
 
 type Config struct {

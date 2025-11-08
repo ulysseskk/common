@@ -1,7 +1,7 @@
 package timerpool
 
 import (
-	"gitlab.ulyssesk.top/common/common/logger/log"
+	"github.com/ulysseskk/common/logger/log"
 	"sync"
 	"time"
 )

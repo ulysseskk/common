@@ -3,7 +3,7 @@ package example
 import (
 	"bytes"
 	"context"
-	"gitlab.ulyssesk.top/common/common/health/metrics"
+	"github.com/ulysseskk/common/health/metrics"
 	"net/http"
 )
 

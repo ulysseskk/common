@@ -1,4 +1,4 @@
-module gitlab.ulyssesk.top/common/common
+module github.com/ulysseskk/common
 
 go 1.23.1
 

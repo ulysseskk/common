@@ -1,7 +1,7 @@
 package sql
 
 import (
-	"gitlab.ulyssesk.top/common/common/components/sql/callbacks"
+	"github.com/ulysseskk/common/components/sql/callbacks"
 	"gorm.io/gorm"
 	"gorm.io/gorm/logger"
 )

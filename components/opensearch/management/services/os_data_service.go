@@ -6,9 +6,9 @@ import (
 	"fmt"
 	"github.com/google/go-cmp/cmp"
 	"github.com/google/go-cmp/cmp/cmpopts"
-	"gitlab.ulyssesk.top/common/common/components/opensearch/management/requests"
-	"gitlab.ulyssesk.top/common/common/components/opensearch/management/responses"
-	"gitlab.ulyssesk.top/common/common/logger"
+	"github.com/ulysseskk/common/components/opensearch/management/requests"
+	"github.com/ulysseskk/common/components/opensearch/management/responses"
+	"github.com/ulysseskk/common/logger"
 	apiextensionsv1 "k8s.io/apiextensions-apiserver/pkg/apis/apiextensions/v1"
 	"strings"
 

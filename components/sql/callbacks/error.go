@@ -5,11 +5,11 @@ import (
 	errors2 "errors"
 	"github.com/jackc/pgx/v5/pgconn"
 	"github.com/lib/pq"
-	"gitlab.ulyssesk.top/common/common/components/sql/metrics"
-	"gitlab.ulyssesk.top/common/common/model/errors"
-	"gitlab.ulyssesk.top/common/common/model/rest"
-	"gitlab.ulyssesk.top/common/common/trace"
-	commonContext "gitlab.ulyssesk.top/common/common/util/context"
+	"github.com/ulysseskk/common/components/sql/metrics"
+	"github.com/ulysseskk/common/model/errors"
+	"github.com/ulysseskk/common/model/rest"
+	"github.com/ulysseskk/common/trace"
+	commonContext "github.com/ulysseskk/common/util/context"
 	"gorm.io/gorm"
 )
 
